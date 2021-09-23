@@ -33,9 +33,9 @@ public class Background {
 	public Background() {
 		try {
 			base = new BufferedImage(400, 1880, BufferedImage.TYPE_INT_RGB);
-			base = ImageIO.read(new File("startBackground.png"));
+			base = ImageIO.read(new File("./resources/startBackground.png"));
 			repeating = new BufferedImage(400, 2176, BufferedImage.TYPE_INT_RGB);
-			repeating = ImageIO.read(new File("scrollBackground.png"));
+			repeating = ImageIO.read(new File("./resources/scrollBackground.png"));
 		} catch (IOException e) {
 		}
 	}

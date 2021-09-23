@@ -54,19 +54,19 @@ class Platform {
 			// Import all the images for the falling platform.
 			try {
 				platHead = new BufferedImage(14, 32, BufferedImage.TYPE_INT_RGB);
-				platHead = ImageIO.read(new File("rollHead.png"));
+				platHead = ImageIO.read(new File("./resources/rollHead.png"));
 				platButt = new BufferedImage(30, 32, BufferedImage.TYPE_INT_RGB);
-				platButt = ImageIO.read(new File("rollButt.png"));
+				platButt = ImageIO.read(new File("./resources/rollButt.png"));
 
 				if (length <= 50) {
 					platBody = new BufferedImage(50, 32, BufferedImage.TYPE_INT_RGB);
-					platBody = ImageIO.read(new File("rollBody.png"));
+					platBody = ImageIO.read(new File("./resources/rollBody.png"));
 					platBody = platBody.getSubimage(0, 0, length, 32);
 				} else {
 					platBody = new BufferedImage(50, 32, BufferedImage.TYPE_INT_RGB);
-					platBody = ImageIO.read(new File("rollBody.png"));
+					platBody = ImageIO.read(new File("./resources/rollBody.png"));
 					BufferedImage tempPlatBody1 = new BufferedImage(50, 32, BufferedImage.TYPE_INT_RGB);
-					tempPlatBody1 = ImageIO.read(new File("rollBody.png"));
+					tempPlatBody1 = ImageIO.read(new File("./resources/rollBody.png"));
 					for (int i = 0; i < (length / 50) - 1; i++) {
 						platBody = joinImage(platBody, tempPlatBody1);
 					}
@@ -82,18 +82,18 @@ class Platform {
 			try {
 				// Import all the images for the platform.
 				platHead = new BufferedImage(16, 24, BufferedImage.TYPE_INT_RGB);
-				platHead = ImageIO.read(new File("salmonHead.png"));
+				platHead = ImageIO.read(new File("./resources/salmonHead.png"));
 				platButt = new BufferedImage(16, 24, BufferedImage.TYPE_INT_RGB);
-				platButt = ImageIO.read(new File("salmonButt.png"));
+				platButt = ImageIO.read(new File("./resources/salmonButt.png"));
 				if (length <= 50) {
 					platBody = new BufferedImage(50, 24, BufferedImage.TYPE_INT_RGB);
-					platBody = ImageIO.read(new File("salmonBody.png"));
+					platBody = ImageIO.read(new File("./resources/salmonBody.png"));
 					platBody = platBody.getSubimage(0, 0, length, 24);
 				} else {
 					platBody = new BufferedImage(50, 24, BufferedImage.TYPE_INT_RGB);
-					platBody = ImageIO.read(new File("salmonBody.png"));
+					platBody = ImageIO.read(new File("./resources/salmonBody.png"));
 					BufferedImage tempPlatBody1 = new BufferedImage(50, 24, BufferedImage.TYPE_INT_RGB);
-					tempPlatBody1 = ImageIO.read(new File("salmonBody.png"));
+					tempPlatBody1 = ImageIO.read(new File("./resources/salmonBody.png"));
 					for (int i = 0; i < (length / 50) - 1; i++) {
 						platBody = joinImage(platBody, tempPlatBody1);
 					}

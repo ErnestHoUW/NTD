@@ -56,7 +56,7 @@ class Enemy {
 		}
 		try {
 			enemyImg = new BufferedImage(width, height, BufferedImage.TYPE_INT_RGB);
-			enemyImg = ImageIO.read(new File("e" + enemyType + ".png"));
+			enemyImg = ImageIO.read(new File("./resources/e" + enemyType + ".png"));
 
 		} catch (IOException e) {
 			e.printStackTrace();

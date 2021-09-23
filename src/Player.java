@@ -77,7 +77,7 @@ class Player {
 			this.moving = 1;
 			this.right = true;
 			clockX.updateTime();
-		} else if (key.equals("W")) {
+		} else if (key.equals("W")||key.equals("Space")) {
 			jumping = true;
 		}
 	}
@@ -110,6 +110,7 @@ class Player {
 			clockX.updateTime();
 			this.right = false;
 			break;
+		case "Space":
 		case "W":
 			jumping = false;
 			break;
@@ -300,7 +301,7 @@ class Player {
 	void importData() {
 		Scanner inFile = null;
 		try {
-			inFile = new Scanner(new File("gameSave.txt"));
+			inFile = new Scanner(new File("./resources/gameSave.txt"));
 
 		} catch (FileNotFoundException ignored) {
 
@@ -324,7 +325,7 @@ class Player {
 	void exportData() {
 		PrintWriter outFile = null;
 		try {
-			outFile = new PrintWriter(new File("gameSave.txt"));
+			outFile = new PrintWriter(new File("./resources/gameSave.txt"));
 
 		} catch (FileNotFoundException ignored) {
 		}

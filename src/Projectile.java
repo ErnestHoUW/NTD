@@ -60,9 +60,9 @@ class Projectile {
 		try {
 			shotImg = new BufferedImage(10, 10, BufferedImage.TYPE_INT_RGB);
 			if (playerProjectile) {// new
-				shotImg = ImageIO.read(new File("fireball2.png"));
+				shotImg = ImageIO.read(new File("./resources/fireball2.png"));
 			} else {
-				shotImg = ImageIO.read(new File("fireball1.png"));
+				shotImg = ImageIO.read(new File("./resources/fireball1.png"));
 			}
 
 		} catch (IOException e) {

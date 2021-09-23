@@ -89,7 +89,7 @@ class UpgradePanel extends JPanel {
 		// import the shops image;
 		try {
 			shopBack = new BufferedImage(360, 340, BufferedImage.TYPE_INT_RGB);
-			shopBack = ImageIO.read(new File("shopBackground.png"));
+			shopBack = ImageIO.read(new File("./resources/shopBackground.png"));
 		} catch (IOException e) {
 		}
 

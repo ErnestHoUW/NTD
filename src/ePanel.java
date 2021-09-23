@@ -72,10 +72,10 @@ public class ePanel extends JPanel {
 		shopSign = new BufferedImage(68, 96, BufferedImage.TYPE_INT_RGB);
 		playSign = new BufferedImage(68, 96, BufferedImage.TYPE_INT_RGB);
 		try {
-			playerImg = ImageIO.read(new File("ernest.png"));
-			homeSign = ImageIO.read(new File("home_sign.png"));
-			shopSign = ImageIO.read(new File("shop_sign.png"));
-			playSign = ImageIO.read(new File("play_sign.png"));
+			playerImg = ImageIO.read(new File("./resources/ernest.png"));
+			homeSign = ImageIO.read(new File("./resources/home_sign.png"));
+			shopSign = ImageIO.read(new File("./resources/shop_sign.png"));
+			playSign = ImageIO.read(new File("./resources/play_sign.png"));
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
